@@ -1,0 +1,5 @@
+---
+- src: https://github.com/cisagov/ansible-role-logrotate
+  name: logrotate
+- src: https://github.com/cisagov/ansible-role-upgrade
+  name: upgrade

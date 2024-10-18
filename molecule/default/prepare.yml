@@ -1,0 +1,12 @@
+---
+- name: Import upgrade playbook
+  ansible.builtin.import_playbook: upgrade.yml
+
+# rsyslog is installed anywhere we would be applying this Ansible role
+- name: Install rsyslog
+  hosts: all
+  tasks:
+    - name: Install rsyslog
+      ansible.builtin.package:
+        name:
+          - rsyslog
